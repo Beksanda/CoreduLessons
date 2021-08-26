@@ -74,6 +74,18 @@ html {
   z-index: 1;
 }
 
+.bg_img-for-home {
+  background-image: url(../images/bg-img.jpg);
+}
+
+.bg_img-for-about {
+  background-image: url(../images/about-img.jpg);
+}
+
+.bg_img-for-contact{
+  background-image: url(../images/contact-img.jpg);
+}
+
 .hero_section::after {
   content: "";
   position: absolute;
@@ -101,8 +113,8 @@ html {
   font-size: 30px;
 }
 
-hero_box h1 {
-  font-size: 60px;
+.hero_box h1 {
+  font-size: 40px;
 }
 
 .center {
@@ -128,6 +140,7 @@ hero_box h1 {
 .btn-outline:hover {
   color: #444;
   background-color: white;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
@@ -190,4 +203,73 @@ footer{
 .container{
   max-width: 1150px;
   margin: 0 auto;
+}
+
+.cards_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards_box-card {
+  width: 20%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+
+.cards_box-card p {
+text-align: center;
+}
+
+/* Form section */
+
+.form_section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  background-color: #888;
+}
+
+.map {
+width: 50%;
+}
+
+.form {
+  width: 50%;
+  height: 100%;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form form input {
+  font-size: 20px;
+  padding: 20px 10px;
+  width: 80%;
+  margin: 10px 0;
+  outline: none;
+  border-radius: 10px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.form form .contact_header {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.form form input::placeholder {
+  color: white;
 }
